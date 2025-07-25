@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Nice Tourist</title>
+  <meta name="description" content="The Nice Tourist – Tour trọn gói & Booking khách sạn/resort, trải nghiệm du lịch sang trọng và trẻ trung.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased text-gray-800">
+  
+<header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/img/logo.png" alt="The Nice Tourist" class="h-10">
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-sky-500">Home</a>
+        <a href="about.html" class="hover:text-sky-500">About</a>
+        <a href="tours.html" class="hover:text-sky-500">Tours</a>
+        <a href="blog.html" class="hover:text-sky-500">Blog</a>
+        <a href="contact.html" class="px-4 py-2 rounded-md text-white bg-sky-500 hover:bg-sky-600 transition">Contact</a>
+      </nav>
+      <button onclick="toggleMenu()" class="md:hidden inline-flex items-center justify-center p-2">
+        ☰
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="md:hidden hidden border-t border-gray-100 bg-white">
+    <nav class="px-4 py-3 space-y-2 text-sm">
+      <a href="index.html" class="block">Home</a>
+      <a href="about.html" class="block">About</a>
+      <a href="tours.html" class="block">Tours</a>
+      <a href="blog.html" class="block">Blog</a>
+      <a href="contact.html" class="block font-semibold text-sky-600">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="min-h-screen bg-white px-4">
+    <h1 class='text-3xl font-bold text-center pt-32'>Giới thiệu The Nice Tourist</h1>
+  </main>
+  
+<footer class="bg-gray-900 text-gray-300 mt-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div>
+      <img src="assets/img/logo.png" alt="The Nice Tourist" class="h-12 mb-3">
+      <p class="text-sm opacity-80">Trải nghiệm địa phương – sang trọng, trẻ trung.</p>
+    </div>
+    <div>
+      <h5 class="text-white font-semibold mb-3">Menu</h5>
+      <ul class="space-y-2 text-sm">
+        <li><a href="about.html" class="hover:text-white">About</a></li>
+        <li><a href="tours.html" class="hover:text-white">Tours</a></li>
+        <li><a href="blog.html" class="hover:text-white">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="text-white font-semibold mb-3">Liên hệ</h5>
+      <ul class="space-y-2 text-sm">
+        <li>Hotline: 09xx xxx xxx</li>
+        <li>Email: info@thenicetourist.vn</li>
+        <li>Đ/c: …</li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="text-white font-semibold mb-3">Theo dõi</h5>
+      <div class="flex gap-3 text-xl">
+        <a href="#">📘</a>
+        <a href="#">📷</a>
+        <a href="#">🎵</a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-gray-800 py-4 text-center text-xs">
+    © <span id="year"></span> The Nice Tourist. All rights reserved.
+  </div>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
